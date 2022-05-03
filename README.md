@@ -1,4 +1,4 @@
-# Case-Study-Wellness_Technology
+# Case-Study-Wellness-Technology
 
 This repository contains the rmd and sql files relating to the Wellness Technology Case Study along with the visualisations created from the code.
 
