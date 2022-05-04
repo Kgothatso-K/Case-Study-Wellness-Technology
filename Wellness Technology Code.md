@@ -486,7 +486,7 @@ wellness_tech_data_daily %>%
          x = "Activity Date", 
          y = "Sedentary Minutes")
 
-ggsave('Boxplot Sedentary Minutes Against Acivity Date.png',
+ggsave('Boxplot Sedentary Minutes Against Activity Date.png',
        width=16,
        height=8)
 ```
@@ -516,7 +516,7 @@ wellness_tech_data_daily %>%
          x = "Activity Date", 
          y = "Calories")
 
-ggsave('Boxplot Calories Against Acivity Date.png',
+ggsave('Boxplot Calories Against Activity Date.png',
        width=16,
        height=8)
 ```
@@ -546,7 +546,7 @@ wellness_tech_data_daily %>%
          x = "Activity Date", 
          y = "Very Active Minutes")
 
-ggsave('Boxplot Very Active Minutes Against Acivity Date.png',
+ggsave('Boxplot Very Active Minutes Against Activity Date.png',
        width=16,
        height=8)
 ```
@@ -576,7 +576,7 @@ wellness_tech_data_daily %>%
          x = "Activity Date", 
          y = "Fairly Active Minutes")
 
-ggsave('Boxplot Fairly Active Minutes Against Acivity Date.png',
+ggsave('Boxplot Fairly Active Minutes Against Activity Date.png',
        width=16,
        height=8)
 ```
@@ -606,7 +606,7 @@ wellness_tech_data_daily %>%
          x = "Activity Date", 
          y = "Lightly Active Minutes")
 
-ggsave('Boxplot Lightly Active Minutes Against Acivity Date.png',
+ggsave('Boxplot Lightly Active Minutes Against Activity Date.png',
        width=16,
        height=8)
 ```
@@ -710,7 +710,7 @@ wellness_tech_data_hourly %>%
          x = "Activity Hour", 
          y = "Total Steps")
 
-ggsave('Boxplot Total Steps Against Acivity Hour.png',
+ggsave('Boxplot Total Steps Against Activity Hour.png',
        width=16,
        height=8)
 ```
@@ -736,7 +736,7 @@ wellness_tech_data_hourly %>%
          x = "Activity Hour", 
          y = "Total Intensity")
 
-ggsave('Boxplot Total Intensity Against Acivity Hour.png',
+ggsave('Boxplot Total Intensity Against Activity Hour.png',
        width=16,
        height=8)
 ```
