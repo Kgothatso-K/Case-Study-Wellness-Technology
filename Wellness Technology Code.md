@@ -456,7 +456,7 @@ wellness_tech_data_daily %>%
          x = "Activity Date", 
          y = "Total Steps")
 
-ggsave('Boxplot Total Steps Against Acivity Date.png',
+ggsave('Boxplot Total Steps Against Activity Date.png',
        width=16,
        height=8)
 ```
@@ -487,6 +487,126 @@ wellness_tech_data_daily %>%
          y = "Sedentary Minutes")
 
 ggsave('Boxplot Sedentary Minutes Against Acivity Date.png',
+       width=16,
+       height=8)
+```
+
+```{r}
+wellness_tech_data_daily %>% 
+  
+  ggplot(aes(x = as.factor(ActivityDate), y = Calories)) + 
+  
+  geom_boxplot(aes(color = as.factor(ActivityDate))) + 
+  
+  geom_point(alpha = 0.25) + 
+  
+  stat_summary(fun = mean, geom = "point", shape = 2, size = 2, color = "blue") +
+  
+  stat_summary(fun = mean, geom = "smooth", group = 1, color = "blue") +
+  
+  scale_color_hue(name = "Activity Date") + 
+  
+  theme_minimal() + 
+  
+  theme(axis.text.x = element_text(angle = 90)) +
+  
+  theme(plot.title = element_text(hjust = 0.5)) + 
+  
+  labs(title = "Calories Against Activity Date", 
+         x = "Activity Date", 
+         y = "Calories")
+
+ggsave('Boxplot Calories Against Acivity Date.png',
+       width=16,
+       height=8)
+```
+
+```{r}
+wellness_tech_data_daily %>% 
+  
+  ggplot(aes(x = as.factor(ActivityDate), y = VeryActiveMinutes)) + 
+  
+  geom_boxplot(aes(color = as.factor(ActivityDate))) + 
+  
+  geom_point(alpha = 0.25) + 
+  
+  stat_summary(fun = mean, geom = "point", shape = 2, size = 2, color = "blue") +
+  
+  stat_summary(fun = mean, geom = "smooth", group = 1, color = "blue") +
+  
+  scale_color_hue(name = "Activity Date") + 
+  
+  theme_minimal() + 
+  
+  theme(axis.text.x = element_text(angle = 90)) +
+  
+  theme(plot.title = element_text(hjust = 0.5)) + 
+  
+  labs(title = "Very Active Minutes Against Activity Date", 
+         x = "Activity Date", 
+         y = "Very Active Minutes")
+
+ggsave('Boxplot Very Active Minutes Against Acivity Date.png',
+       width=16,
+       height=8)
+```
+
+```{r}
+wellness_tech_data_daily %>% 
+  
+  ggplot(aes(x = as.factor(ActivityDate), y = FairlyActiveMinutes)) + 
+  
+  geom_boxplot(aes(color = as.factor(ActivityDate))) + 
+  
+  geom_point(alpha = 0.25) + 
+  
+  stat_summary(fun = mean, geom = "point", shape = 2, size = 2, color = "blue") +
+  
+  stat_summary(fun = mean, geom = "smooth", group = 1, color = "blue") +
+  
+  scale_color_hue(name = "Activity Date") + 
+  
+  theme_minimal() + 
+  
+  theme(axis.text.x = element_text(angle = 90)) +
+  
+  theme(plot.title = element_text(hjust = 0.5)) + 
+  
+  labs(title = "Fairly Active Minutes Against Activity Date", 
+         x = "Activity Date", 
+         y = "Fairly Active Minutes")
+
+ggsave('Boxplot Fairly Active Minutes Against Acivity Date.png',
+       width=16,
+       height=8)
+```
+
+```{r}
+wellness_tech_data_daily %>% 
+  
+  ggplot(aes(x = as.factor(ActivityDate), y = LightlyActiveMinutes)) + 
+  
+  geom_boxplot(aes(color = as.factor(ActivityDate))) + 
+  
+  geom_point(alpha = 0.25) + 
+  
+  stat_summary(fun = mean, geom = "point", shape = 2, size = 2, color = "blue") +
+  
+  stat_summary(fun = mean, geom = "smooth", group = 1, color = "blue") +
+  
+  scale_color_hue(name = "Activity Date") + 
+  
+  theme_minimal() + 
+  
+  theme(axis.text.x = element_text(angle = 90)) +
+  
+  theme(plot.title = element_text(hjust = 0.5)) + 
+  
+  labs(title = "Lightly Active Minutes Against Activity Date", 
+         x = "Activity Date", 
+         y = "Lightly Active Minutes")
+
+ggsave('Boxplot Lightly Active Minutes Against Acivity Date.png',
        width=16,
        height=8)
 ```
@@ -591,6 +711,32 @@ wellness_tech_data_hourly %>%
          y = "Total Steps")
 
 ggsave('Boxplot Total Steps Against Acivity Hour.png',
+       width=16,
+       height=8)
+```
+
+```{r}
+wellness_tech_data_hourly %>% 
+  
+  ggplot(aes(x = as.factor(ActivityHour), y = TotalIntensity)) + 
+  
+  geom_boxplot(aes(color = as.factor(ActivityHour))) + 
+  
+  stat_summary(fun = mean, geom = "point", shape = 2, size = 2, color = "blue") +
+  
+  stat_summary(fun = mean, geom = "smooth", group = 1, color = "blue") +
+  
+  scale_color_hue(name = "Activity Hour") + 
+  
+  theme_minimal() + 
+  
+  theme(plot.title = element_text(hjust = 0.5)) + 
+  
+  labs(title = "Total Intensity Against Activity Hour", 
+         x = "Activity Hour", 
+         y = "Total Intensity")
+
+ggsave('Boxplot Total Intensity Against Acivity Hour.png',
        width=16,
        height=8)
 ```
